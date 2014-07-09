@@ -67,7 +67,7 @@ class XBee900HP:
     self.HardSerial.close()    
  
   def stop(self):
-    continueListening = False
+    self.continueListening = False
     
   def init(self):
     while self.waitForInit:
